@@ -41,14 +41,11 @@ public class CircularShifterTest {
 
 	@Test
 	public void testDuplicateWords() {
-		inputLineStorage.addLine("The Day after Tomorrow");
-		inputLineStorage.addLine("The Day after Tomorrow");
-		assertEquals(4, afterShiftLineStorage.size());
+		inputLineStorage.addLine("The the day after Tomorrow");
+		assertEquals(2, afterShiftLineStorage.size());
 
-		assertEquals("Day after Tomorrow the", afterShiftLineStorage.get(0).toString());
-		assertEquals("Day after Tomorrow the", afterShiftLineStorage.get(1).toString());
-		assertEquals("Tomorrow the Day after", afterShiftLineStorage.get(2).toString());
-		assertEquals("Tomorrow the Day after", afterShiftLineStorage.get(3).toString());
+		assertEquals("Day after Tomorrow the the", afterShiftLineStorage.get(0).toString());
+		assertEquals("Tomorrow the the Day after", afterShiftLineStorage.get(1).toString());
 	}
 
 }
