@@ -14,7 +14,6 @@ import sg.edu.nus.comp.cs3219.model.LineStorage;
 public class CircularShifter implements Observer {
 	final private LineStorage resultStorage;
 	private Set<String> ignoreWords = new HashSet<>();
-	//
 	private Set<String> requiredWords = new HashSet<>();
 
 	public CircularShifter(LineStorage storage) {
