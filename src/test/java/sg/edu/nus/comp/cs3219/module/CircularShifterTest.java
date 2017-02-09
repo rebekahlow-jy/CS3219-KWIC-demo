@@ -41,7 +41,7 @@ public class CircularShifterTest {
 
 	@Test
 	public void testDuplicateWords() {
-		inputLineStorage.addLine("The the day after Tomorrow");
+		inputLineStorage.addLine("The the Day after Tomorrow");
 		assertEquals(2, afterShiftLineStorage.size());
 
 		assertEquals("Day after Tomorrow the the", afterShiftLineStorage.get(0).toString());
