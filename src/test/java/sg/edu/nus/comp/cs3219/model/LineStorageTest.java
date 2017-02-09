@@ -43,4 +43,15 @@ public class LineStorageTest {
 		assertEquals("Man", storage.get(1).getWord(0));
 		assertEquals(2, storage.size());
 	}
+
+	@Test
+	public void testClearLines() {
+		storage.addLine("The Day after Tomorrow");
+		storage.addLine("Fast and Furious");
+		storage.addLine("Man of Steel");
+		assertEquals(3, storage.size());
+
+		storage.clearLines();
+		assertEquals(0, storage.size());
+	}
 }
