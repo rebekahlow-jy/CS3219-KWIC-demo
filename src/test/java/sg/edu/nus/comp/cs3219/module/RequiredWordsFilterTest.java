@@ -3,6 +3,8 @@ package sg.edu.nus.comp.cs3219.module;
 import org.junit.Before;
 import org.junit.Test;
 
+import sg.edu.nus.comp.cs3219.model.LineStorage;
+
 public class RequiredWordsFilterTest {
 	LineStorage inputLineStorage;
 	LineStorage afterFilterLineStorage;
