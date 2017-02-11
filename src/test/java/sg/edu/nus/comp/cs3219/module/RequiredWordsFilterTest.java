@@ -2,6 +2,9 @@ package sg.edu.nus.comp.cs3219.module;
 
 import static org.junit.Assert.assertEquals;
 
+import java.util.HashSet;
+import java.util.Set;
+
 import org.junit.Before;
 import org.junit.Test;
 
