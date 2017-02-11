@@ -24,7 +24,7 @@ public class RequiredWordsFilterTest {
 		Set<String> requiredWords = new HashSet<>();
 		requiredWords.add("Day");
 		requiredWords.add("Tomorrow");
-		filter.setIgnoreWords(words);
+		filter.setRequiredWords(requiredWords);
 		inputLineStorage.addObserver(filter);
 	}
 

@@ -23,7 +23,7 @@ public class CircularShifterTest {
 		Set<String> words = new HashSet<>();
 		words.add("the");
 		words.add("after");
-		shifter.setRequiredWords(words);
+		shifter.setIgnoreWords(words);
 		inputLineStorage.addObserver(shifter);
 	}
 
