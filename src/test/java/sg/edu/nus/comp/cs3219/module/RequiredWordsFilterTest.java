@@ -1,5 +1,7 @@
 package sg.edu.nus.comp.cs3219.module;
 
+import static org.junit.Assert.assertEquals;
+
 import org.junit.Before;
 import org.junit.Test;
 
@@ -15,7 +17,7 @@ public class RequiredWordsFilterTest {
 		// TODO
 		inputLineStorage = new LineStorage();
 		afterFilterLineStorage = new LineStorage();
-		filter = new RequiredWordsFilter(afterShiftLineStorage);
+		filter = new RequiredWordsFilter(afterFilterLineStorage);
 		Set<String> requiredWords = new HashSet<>();
 		requiredWords.add("Day");
 		requiredWords.add("Tomorrow");
