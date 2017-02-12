@@ -39,7 +39,7 @@ public class RequiredWordsFilter implements Observer {
 	}
 	
 	private void filter(int lineNumber) {
-		for (int i = 0; i <= lineNumber; i++) {
+		for (int i = 0; i <= lineNumber && i < resultStorage.size(); i++) {
 			if (!isRequiredWord(resultStorage.get(i).getWord(0))) {
 				resultStorage.delete(i);
 				break;
