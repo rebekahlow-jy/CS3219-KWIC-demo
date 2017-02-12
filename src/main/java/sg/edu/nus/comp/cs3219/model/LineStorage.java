@@ -39,8 +39,6 @@ public class LineStorage extends Observable {
 
 	public void delete(int index) {
 		lines.remove(index);
-//		setChanged();
-		notifyObservers(new LineStorageChangeEvent(LineStorageChangeType.DELETE, getLastIndex()));
 	}
 
 	public int size() {
